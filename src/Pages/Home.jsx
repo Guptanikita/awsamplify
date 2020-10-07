@@ -1,12 +1,10 @@
 import React from 'react';
 import Slideshow from '../Components/SlideShow';
 import slide1 from "../assets/background-home.jpg";
-import slide2 from "../assets/background-home.jpg";
-import slide3 from "../assets/background-home.jpg";
-import slide4 from "../assets/background-home.jpg";
-import slide5 from "../assets/background-home.jpg";
+import slide2 from "../assets/home-page2.jpg";
+import slide3 from "../assets/home-page3.jpg";
 
-const slides = [slide1, slide2, slide3, slide4, slide5];
+const slides = [slide1, slide2, slide3];
 
 const s = {
     container: "screenW screenH dGray col",

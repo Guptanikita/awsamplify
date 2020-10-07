@@ -57,7 +57,7 @@
 }
 /*====== HEIGHT ======*/
 .screenH {
-    height: 100vh;
+    height: 70vh;
 }
 .fullH {
     height: 100%;
@@ -148,6 +148,13 @@
 .navigation-font{
     font-weight: bold;
     color: black; 
+}
+
+.ngo-image {
+    width: 15%;
+    height: 15%;
+    padding: 10px;
+    padding-right: 70px;
 }
 @keyframes App-logo-spin {
   from {
