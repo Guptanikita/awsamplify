@@ -1,11 +1,18 @@
 import React from 'react'
 import {
     BrowserRouter as Router,
-    Switch
+    Switch,
+    Route
 } from "react-router-dom";
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import logo from '../assets/foodbank-logo.jpg';
+import Home from '../Pages/Home';
+import About from '../Pages/About';
 
+const style = {
+    fontWeight: 'bold',
+    color: 'black'
+};
 
 class Navigation extends React.Component {
     render() {
@@ -20,12 +27,12 @@ class Navigation extends React.Component {
                                 </Navbar.Brand>
                                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                                 <Navbar.Collapse id="basic-navbar-nav">
-                                    <Nav className="ml-auto navigation-font">
-                                        <Nav.Link href="#">Home</Nav.Link>
-                                        <Nav.Link href="#">FoodMap</Nav.Link>
-                                        <Nav.Link href="#about-us">Contact Us</Nav.Link>
-                                        <Nav.Link href="#contact-us">About Us</Nav.Link>
-                                        <Nav.Link href="#contact-us">Join Us</Nav.Link>
+                                    <Nav className="ml-auto">
+                                        <Nav.Link href="#" style={style}>Home</Nav.Link>
+                                        <Nav.Link href="#" style={style}>FoodMap</Nav.Link>
+                                        <Nav.Link href="#about-us" style={style}>Contact Us</Nav.Link>
+                                        <Nav.Link to="/about" style={style}>About Us</Nav.Link>
+                                        <Nav.Link href="#contact-us" style={style}>Join Us</Nav.Link>
                                         {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                             <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -37,17 +44,12 @@ class Navigation extends React.Component {
                                 </Navbar.Collapse>
                             </Navbar>
                             <br />
-                            <Switch>
-                                {/* <Route exact path="/">
-                                <Home />
-                            </Route>
-                            <Route path="#">
-                                <AboutUs />
-                            </Route>
-                            <Route path="#">
-                                <ContactUs />
-                            </Route> */}
-                            </Switch>
+
+                            {/* <Route path="/">
+                                    <Home />
+                                </Route> */}
+                            <Route path='about' component={About}></Route>
+
                         </Router>
                     </div>
                 </div>
