@@ -1,0 +1,6 @@
+type Todo @model {
+  id: ID!
+  description: String
+  amazon_wishlist_url: String
+  address: String
+}
