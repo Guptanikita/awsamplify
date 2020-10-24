@@ -19,7 +19,7 @@ function CaseModal() {
             >
                 <Form>
                     <Modal.Header closeButton>
-                        <Modal.Title style={{ color: 'black' }}>Modal title</Modal.Title>
+                        <Modal.Title style={{ color: 'black' }}>Create Case</Modal.Title>
                     </Modal.Header>
                     <Modal.Body style={{ color: 'black' }}>
                         <Form.Group controlId="CaseDescription">
